@@ -1,0 +1,52 @@
+{
+  "name": "personal-astro-template",
+  "description": "",
+  "version": "0.0.1",
+  "author": {
+    "name": "Christopher Angelo",
+    "email": "angelo@angeloanan.xyz",
+    "url": "https://angeloanan.xyz"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && tsc --noEmit && astro build",
+    "preview": "wrangler pages dev ./dist",
+    "astro": "astro"
+  },
+  "devDependencies": {
+    "@astrojs/cloudflare": "^5.0.0",
+    "@astrojs/node": "^4.0.0",
+    "@astrojs/tailwind": "2.1.2",
+    "@fontsource/inter": "^4.5.15",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "astro": "^1.9.2",
+    "autoprefixer": "10.4.13",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-astro": "^0.23.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-regexp": "^1.12.0",
+    "eslint-plugin-sonarjs": "^0.18.0",
+    "postcss": "8.4.19",
+    "prettier": "^2.8.3",
+    "prettier-plugin-astro": "^0.7.2",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "3.2.4",
+    "typescript": "^4.9.4",
+    "wrangler": "^2.8.0"
+  },
+  "dependencies": {
+    "@astrojs/image": "^0.12.1",
+    "@astrojs/partytown": "^1.0.2",
+    "@astrojs/prefetch": "^0.1.1",
+    "@astrojs/sitemap": "^1.0.0",
+    "@astrojs/solid-js": "^1.2.3",
+    "@astrojs/vercel": "^2.4.0",
+    "astro-compress": "^1.1.28",
+    "sharp": "^0.31.3",
+    "solid-js": "^1.6.9"
+  }
+}
