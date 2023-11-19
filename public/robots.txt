@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://angeloanan.xyz/sitemap-index.xml

@@ -8,6 +8,9 @@ dependencies:
   '@astrojs/node':
     specifier: ^6.0.4
     version: 6.0.4(astro@3.5.5)
+  astro-robots:
+    specifier: ^1.0.2
+    version: 1.0.2
   sharp:
     specifier: ^0.32.6
     version: 0.32.6
@@ -52,6 +55,9 @@ devDependencies:
   astro:
     specifier: ^3.5.5
     version: 3.5.5(typescript@5.2.2)
+  astro-seo:
+    specifier: ^0.8.0
+    version: 0.8.0
   autoprefixer:
     specifier: 10.4.16
     version: 10.4.16(postcss@8.4.31)
@@ -91,6 +97,9 @@ devDependencies:
   tailwindcss:
     specifier: 3.3.5
     version: 3.3.5
+  type-fest:
+    specifier: ^4.8.1
+    version: 4.8.1
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -1662,6 +1671,14 @@ packages:
       semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /astro-robots@1.0.2:
+    resolution: {integrity: sha512-zVwBg8hXot4MlV9SzG75iBk13YM8upi97Ceiu2C1CWQjuRGbuqPjYKSi86b4ZHizTUdJohHOfnlOUV8RBifvSg==}
+    dev: false
+
+  /astro-seo@0.8.0:
+    resolution: {integrity: sha512-7gq6lhibCM8FuzZIJlbLLWP5EJ9KL2/4XqeFrAg9O6ZK2xMFxJ5ubKf+a0VJwwTu8W8Xr421CmpiXu6Hq7n/7Q==}
     dev: true
 
   /astro@3.5.5(typescript@5.2.2):
@@ -5619,6 +5636,11 @@ packages:
   /type-fest@2.19.0:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
+
+  /type-fest@4.8.1:
+    resolution: {integrity: sha512-ShaaYnjf+0etG8W/FumARKMjjIToy/haCaTjN2dvcewOSoNqCQzdgG7m2JVOlM5qndGTHjkvsrWZs+k/2Z7E0Q==}
+    engines: {node: '>=16'}
+    dev: true
 
   /typed-array-buffer@1.0.0:
     resolution: {integrity: sha512-Y8KTSIglk9OZEr8zywiIHG/kmQ7KWyjseXs1CbSo8vC42w7hg2HgYTxSWwP0+is7bWDc1H+Fo026CpHFwm8tkw==}

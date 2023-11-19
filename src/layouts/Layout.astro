@@ -1,12 +1,17 @@
 ---
 import '@fontsource-variable/inter'
+import defaultSEO from '../default-seo.ts'
+import { SEO, type Props as SEOProps } from 'astro-seo'
 import { ViewTransitions } from 'astro:transitions'
+import type { PartialDeep } from 'type-fest'
 
 export interface Props {
-  title: string
+  seo?: PartialDeep<SEOProps>
 }
 
-const { title } = Astro.props
+const { seo } = Astro.props
+
+const finalSeo = Object.assign(defaultSEO, seo)
 ---
 
 <!doctype html>
@@ -16,7 +21,7 @@ const { title } = Astro.props
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <link rel='sitemap' href='/sitemap-index.xml' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <title>{title}</title>
+    <SEO {...finalSeo} />
 
     <ViewTransitions />
   </head>
