@@ -4,6 +4,7 @@ import defaultSEO from '../default-seo.ts'
 import { SEO, type Props as SEOProps } from 'astro-seo'
 import { ViewTransitions } from 'astro:transitions'
 import type { PartialDeep } from 'type-fest'
+import { Head } from 'astro-capo'
 
 export interface Props {
   seo?: PartialDeep<SEOProps>
@@ -16,7 +17,7 @@ const finalSeo = Object.assign(defaultSEO, seo)
 
 <!doctype html>
 <html lang='en'>
-  <head>
+  <Head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <link rel='sitemap' href='/sitemap-index.xml' />
@@ -24,7 +25,7 @@ const finalSeo = Object.assign(defaultSEO, seo)
     <SEO {...finalSeo} />
 
     <ViewTransitions />
-  </head>
+  </Head>
   <body class='bg-neutral-50 dark:bg-neutral-900'>
     <slot />
   </body>

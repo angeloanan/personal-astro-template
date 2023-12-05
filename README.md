@@ -8,6 +8,11 @@ It uses the following stack:
 * [SolidJS](https://solidjs.org)
 * [TailwindCSS](https://tailwindcss.com)
 
+It also has some opiniated optimizations for UX/DX that you might miss in other templates:
+* Prefetches all links and uses View Transitions by default for seamless navigation
+* Autosorts HTML's `<head>` tags for [better performance and SEO](https://rviscomi.github.io/capo.js/)
+* Optimizes Docker image output size for production
+
 ## Getting Started
 
 To get started, click the "Use this template" button above, or run the following command:
