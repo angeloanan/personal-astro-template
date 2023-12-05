@@ -7,7 +7,6 @@ It uses the following stack:
 * [pnpm](https://pnpm.io)
 * [SolidJS](https://solidjs.org)
 * [TailwindCSS](https://tailwindcss.com)
-* [Partytown](https://partytown.builder.io)
 
 ## Getting Started
 
