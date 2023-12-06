@@ -16,7 +16,8 @@ export default defineConfig({
     prefetchAll: true
   },
   integrations: [solidJs(), tailwind(), sitemap(), robots()],
-  output: 'server',
+
+  output: 'hybrid',
   adapter: node({
     mode: 'standalone'
   })

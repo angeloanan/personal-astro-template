@@ -32,8 +32,13 @@ pnpm install
 
 Must do:
 
+- [ ] Double check for any missing [`getStaticPaths()`](https://docs.astro.build/en/reference/api-reference/#getstaticpaths) on pages with dynamic params.
 - [ ] Whitelabel package.json with your project information (enable `private: true` if needed)
 - [ ] Lock dependencies version to major version
+- [ ] Replace `output` at [astro.config.mjs](./astro.config.mjs) with desired output target.
+  - `server` is good for mostly server-rendered pages with few static / prerendered content.
+  - `hybrid` is good for mostly static sites with a few dynamic routes.
+  - Read more: https://docs.astro.build/en/guides/server-side-rendering/#configure-server-or-hybrid
 - [ ] Replace `site` on [astro.config.mjs](./astro.config.mjs) with your site URL (sitemap)
 - [ ] Replace SEO configurations at [src/default-seo.ts](./src/default-seo.ts)
   - [ ] Replace your favicon
