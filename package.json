@@ -14,6 +14,7 @@
     "start": "node ./dist/server/entry.mjs"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^9.0.2",
     "@astrojs/node": "^8.2.3",
     "sharp": "^0.33.2",
     "solid-js": "^1.8.15"

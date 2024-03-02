@@ -50,3 +50,29 @@ Should do:
 
 - [astro.config.mjs](./astro.config.mjs)
   - [ ] Adjust Astro's [prefetching strategy](https://docs.astro.build/en/guides/prefetch/#prefetch-configuration) to your likings
+
+
+## Deployment
+
+### Docker
+
+To deploy the app using Docker, you can build and run the image just like any other Docker image:
+
+To build the image, run the following command, replacing your username and app name:
+
+```bash
+docker build -t username/image-name .
+```
+
+Then, run the following command to deploy the app, replacing your port number:
+
+```bash
+docker run -p 4321:4321 username/image-name
+```
+
+### Cloudflare
+
+To deploy the app using Cloudflare, you will need to replace the `output` at [astro.config.mjs](./astro.config.mjs) with `cloudflare`.  
+By default, uncommenting the code will deploy the app using Cloudflare Workers.
+
+You can import the app to your Cloudflare account by importing the Git repository via Cloudflare's web interface.

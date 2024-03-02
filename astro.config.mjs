@@ -7,6 +7,7 @@ import sitemap from '@astrojs/sitemap'
 
 // https://astro.build/config
 import robots from 'astro-robots'
+import cloudflare from '@astrojs/cloudflare'
 
 // https://astro.build/config
 export default defineConfig({
@@ -21,4 +22,13 @@ export default defineConfig({
   adapter: node({
     mode: 'standalone'
   })
+  // adapter: cloudflare({
+  //   mode: 'advanced',
+  //   routes: {
+  //     strategy: 'auto',
+  //     include: [],
+  //     exclude: []
+  //   },
+  //   imageService: 'compile'
+  // })
 })
