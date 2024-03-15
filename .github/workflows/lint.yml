@@ -6,7 +6,7 @@ on:
   pull_request: {}
 
 concurrency:
-  group: ${{ github.job }}-${{ github.ref }}
+  group: ${{ github.job }}-${{ github.ref }}-lint
   cancel-in-progress: true
 
 jobs:
