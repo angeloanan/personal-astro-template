@@ -39,6 +39,7 @@ Must do:
   - `server` is good for mostly server-rendered pages with few static / prerendered content.
   - `hybrid` is good for mostly static sites with a few dynamic routes.
   - Read more: https://docs.astro.build/en/guides/server-side-rendering/#configure-server-or-hybrid
+  - [ ] If using `hybrid`, disable prerendering on unnecessary API routes
 - [ ] Replace `site` on [astro.config.mjs](./astro.config.mjs) with your site URL (sitemap)
 - [ ] Replace SEO configurations at [src/default-seo.ts](./src/default-seo.ts)
   - [ ] Replace your favicon
