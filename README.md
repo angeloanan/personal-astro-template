@@ -51,6 +51,7 @@ Should do:
 
 - [astro.config.mjs](./astro.config.mjs)
   - [ ] Adjust Astro's [prefetching strategy](https://docs.astro.build/en/guides/prefetch/#prefetch-configuration) to your likings
+- [ ] Check if your content is compatible with light / dark mode
 
 
 ## Deployment
