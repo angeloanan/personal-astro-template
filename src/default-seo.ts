@@ -1,7 +1,7 @@
 import type { Props as SEOProps } from 'astro-seo'
 
 const defaultSEO: SEOProps = {
-  title: "Angelo's Astro Template",
+  titleDefault: "Angelo's Astro Template",
   titleTemplate: '%s | Astro Template',
 
   description:
