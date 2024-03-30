@@ -12,7 +12,7 @@ export interface Props {
 
 const { seo } = Astro.props
 
-const finalSeo = Object.assign(defaultSEO, seo)
+const finalSeo = Object.assign(defaultSEO, seo ?? { title: null })
 ---
 
 <!doctype html>
